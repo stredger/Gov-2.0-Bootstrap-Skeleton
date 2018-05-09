@@ -1,16 +1,26 @@
 {
-  "dependencies": {
-  },
+  "name": "Gov-2.0-Bootstrap-Skeleton",
+  "version": "0.1.0",
+  "description": "bcgov bootstrap skeleton, with webpack build",
+  "main": "index.js",
+  "repository": "git@github.com:stredger/Gov-2.0-Bootstrap-Skeleton.git",
+  "author": "Stephen Tredger <stredger@gmail.com>",
+  "private": false,
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.28.11",
     "eslint": "^4.19.1",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.11",
     "webpack": "^4.8.1",
-    "webpack-cli": "^2.1.3",
-    "css-loader": "^0.28.11",
-    "file-loader": "^1.1.11"
+    "webpack-cli": "^2.1.3"
+  },
+  "dependencies": {
   },
   "scripts": {
     "build": "webpack"
+  },
+  "peerDependencies": {
+    "jquery": ">=1.9.1 <3.0.0"
   }
 }
