@@ -4,7 +4,7 @@
 
 document.createElement("nav") // for IE
 
-var govNav = {
+window.govNav = {
 
 	defaults: {
 		animateduration: 200,
@@ -77,9 +77,9 @@ var govNav = {
 					else {
 						if((e.type=='click')){
 							govNav.showhide($(this).closest("li"), 'show', setting)
-						}						
+						}
 					}
-					
+
 				})
 				.on('click', function(e){
 					e.stopPropagation()
@@ -119,7 +119,7 @@ var govNav = {
 			}
 		})
 		var $mainlis = $topul.children('li.hassub').on('mouseleave', function(){
-			govNav.showhide($(this), 'hide', setting)		
+			govNav.showhide($(this), 'hide', setting)
 		})
 	},
 

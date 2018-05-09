@@ -11,8 +11,8 @@ module.exports = {
     path: __dirname + '/dist',
     filename: 'bcgov-bootstrap.js'
   },
+  devtool: 'source-map',
   module: {
-
     rules: [
       { // regular css files
         test: /\.css$/,
@@ -30,7 +30,7 @@ module.exports = {
       },
       // Pull out all fonts because not all should be packaged because some browsers prefer different types
       {
-        test: /\.(ttf|eot|woff|woff2|svg|png)$/,
+        test: /\.(ttf|eot|woff|woff2|svg|png|jpg|ico|db)$/,
         use: [
           {
             loader: 'file-loader',

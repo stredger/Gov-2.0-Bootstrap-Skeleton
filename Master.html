@@ -23,31 +23,17 @@
     <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png"/>
     <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png"/>
     <link rel="manifest" href="icons/manifest.json"/>
-    <link rel="icon" type="image/png" href="images/favicon.ico"/>
+    <link rel="icon" type="image/png" href="dist/images/favicon.ico"/>
     <meta name="msapplication-TileColor" content="#ffffff"/>
     <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png"/>
     <meta name="theme-color" content="#ffffff"/>
 
     <title>KMB-ENV GOV 2.0 Template</title>
 
-    <!-- BOOTSTRAP CORE CSS v3.3.6 -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link rel="stylesheet" href="css/ie10-viewport-bug-workaround.css" />
-
-    <!-- STANDARD CSS -->
-    <link type="text/css" href="css/main.css?refresh=160106102" rel="stylesheet" />
+    <link rel="stylesheet" href="dist/bcgov-bootstrap.css">
 
     <!-- FONTS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
-
-    <!-- CUSTOM ENV CSS -->
-    <link href="css/custom-main.css" rel="stylesheet" />
-    <link href="css/custom-form.css" rel="stylesheet" />
-
-    <!-- DATATABLES CSS -->
-    <link href="css/dataTables.bootstrap.min.css" rel="stylesheet" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -66,7 +52,7 @@
                     <!-- GOV & ENV TITLE -->
                     <div class="col-sm-3 col-md-2 col-lg-2 header-main-left">
                         <div id="logo">
-                            <a href="http://gov.bc.ca"><img src="images/gov3_bc_logo.png" alt="Government of B.C." title="Government of B.C." /></a>
+                            <a href="http://gov.bc.ca"><img src="dist/images/gov3_bc_logo.png" alt="Government of B.C." title="Government of B.C." /></a>
                         </div>
                         <div id="access">
                             <ul>
@@ -82,7 +68,7 @@
                             </ul>
                         </div>
                         <button type="button" class="navbar-toggle gov-button-custom collapsed" data-toggle="collapse" data-target="#navbar"  aria-expanded="true" aria-label="Burger Navigation">
-                            <img src="images/menu-open-mobile.png" />
+                            <img src="dist/images/menu-open-mobile.png" />
                         </button>
                     </div>
                     <div class="col-sm-8 col-md-8 col-lg-6 hidden-xs">
@@ -1527,7 +1513,7 @@
 
     <!-- FOOTER -->
     <div id="footer">
-        <img class="back-to-top" src="images/back-to-top.png" alt="Back to top" title="Back to top" style="display: inline;">
+        <img class="back-to-top" src="dist/images/back-to-top.png" alt="Back to top" title="Back to top" style="display: inline;">
         <div id="footerWrapper">
             <div id="footerAdminSection">
                 <div id="footerAdminLinksContainer" class="container">
@@ -1572,7 +1558,6 @@
                 <div class="modal-body">
                     <h4>Modal Window Content Title</h4>
                     <p>Here's some words to fill some space.</p>
-                    <img class="img-thumbnail img-responsive" src="img/scared_kitten.jpg" />
                     <div class="table-responsive">
                         <table class="table table-condensed table-bordered">
                             <thead>
@@ -1631,17 +1616,10 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/misc.js"></script>
-    <script src="js/navMenu.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
-
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="dist/bcgov-bootstrap.js"></script>
 
     <!-- DATATABLES SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.10/js/dataTables.bootstrap.min.js"></script>
 
