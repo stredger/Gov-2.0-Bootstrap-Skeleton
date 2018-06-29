@@ -1,6 +1,6 @@
 
 // import all css, gets bundled together
-import './css/bootstrap.css'
+import 'bootstrap/dist/css/bootstrap.css'
 import './css/ie10-viewport-bug-workaround.css'
 import './css/custom-form.css'
 import './css/custom-main.css'
@@ -8,7 +8,7 @@ import './css/main.css'
 import './css/tfrs-additional.css'
 
 // js to bundle
-import './js/bootstrap'
+import 'bootstrap/dist/js/bootstrap' // we need bootstrap >= 3.3.7
 import './js/navMenu'
 import './js/ie10-viewport-bug-workaround'
 import './js/misc' // this file is outta control :C
