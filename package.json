@@ -22,6 +22,6 @@
     "build": "webpack --mode=production"
   },
   "peerDependencies": {
-    "jquery": ">=1.9.1 <3.0.0"
+    "jquery": ">=3.0.0"
   }
 }
