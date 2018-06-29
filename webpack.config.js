@@ -28,14 +28,27 @@ module.exports = {
             minimize: true
           }}, 'sass-loader'])
       },
-      // Pull out all fonts because not all should be packaged because some browsers prefer different types
+      // Put fonts into fonts dir
       {
-        test: /\.(ttf|eot|woff|woff2|svg|png|jpg|ico|db)$/,
+        test: /\.(ttf|eot|woff|woff2)$/,
         use: [
           {
             loader: 'file-loader',
             options: {
-              name: '[path][name].[ext]',
+              name: 'fonts/[name].[ext]',
+              publicPath: '../'
+            }
+          }
+        ]
+      },
+      // Put images into images dir
+      {
+        test: /\.(svg|png|jpg|ico|db)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'images/[name].[ext]',
               publicPath: '../'
             }
           }
