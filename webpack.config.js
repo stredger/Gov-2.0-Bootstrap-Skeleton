@@ -9,7 +9,7 @@ module.exports = {
 
   output: {
     path: __dirname + '/dist',
-    filename: 'bcgov-bootstrap.js'
+    filename: 'js/bcgov-bootstrap.js'
   },
   devtool: 'source-map',
   module: {
@@ -58,7 +58,7 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin({ // define where to save the file
-      filename: 'bcgov-bootstrap.css',
+      filename: 'css/bcgov-bootstrap.css',
       allChunks: true,
     }),
     new CleanWebpackPlugin(['dist'], {
